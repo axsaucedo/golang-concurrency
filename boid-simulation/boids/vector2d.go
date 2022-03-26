@@ -39,7 +39,7 @@ func (v1 Vector2D) DivideV(d float64) Vector2D {
 	return Vector2D{x: v1.x / d, y: v1.y / d}
 }
 
-func (v1 Vector2D) limit(lower, upper float65) Vector2D {
+func (v1 Vector2D) limit(lower, upper float64) Vector2D {
 	return Vector2D{x: math.Min(math.Max(v1.x, lower), upper),
 		y: math.Min(math.Max(v1.y, lower), upper)}
 }
